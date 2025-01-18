@@ -201,6 +201,112 @@ header nav ul li a {
   margin-bottom: 3rem;
 }
 
+/* Feature-list section */
+#feature-list {
+  width: 100%;
+  height: 113vh;
+  padding: 5rem 0;
+}
+
+#feature-list .container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+#feature-list .container .left {
+  width: 45%;
+  height: 100%;
+}
+
+#feature-list .container .left .title-box {
+  width: 100%;
+}
+
+#feature-list .container .left .title-box .headings {
+  border-left: 3px solid #ff900e;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: fit-content;
+}
+
+#feature-list .container .left .title-box .headings h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+#feature-list .container .left .title-box p {
+  font-size: 1.8rem;
+}
+
+#feature-list .container .left .feature-items {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+#feature-list .container .left .feature-items .item {
+  width: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0.1rem 0.1rem 0.35rem rgba(0, 0, 0, 0.3);
+}
+
+#feature-list .container .left .feature-items .item .item-content {
+  width: 100%;
+}
+
+#feature-list .container .left .feature-items .item .item-content h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+#feature-list .container .left .feature-items .item .item-content p {
+  font-size: 1.8rem;
+}
+
+#feature-list .container .right {
+  width: 55%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  position: relative;
+  justify-content: end;
+  align-items: flex-start;
+}
+
+#feature-list .container .right .image-box {
+  width: 82%;
+  height: 97%;
+  /* background-color: green; */
+  background-image: url(images/architect.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
+#feature-list .container .right .btn {
+  position: absolute;
+  bottom: 0;
+  left: 3rem;
+  font-size: 3rem;
+  line-height: 0.8;
+  text-transform: uppercase;
+  padding: 2rem 4rem;
+}
+
+#feature-list .container .right .btn .small-text {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
 /* ##################### MEDIA QUERIES ################## */
 @media screen and (max-width: 576px) {
   html {
@@ -254,6 +360,36 @@ header nav ul li a {
   #features .container .right {
     width: 100%;
     padding: 0 2rem;
+  }
+  /* Feature-list section */
+  #feature-list {
+    width: 100%;
+    height: fit-content;
+    padding: 5rem 1rem;
+  }
+
+  #feature-list .container {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  #feature-list .container .left {
+    width: 100%;
+  }
+
+  #feature-list .container .right {
+    width: 100%;
+    height: 70vh;
+  }
+
+  #feature-list .container .right .image-box {
+    width: 100%;
+    height: 95%;
+  }
+
+  #feature-list .container .right .btn {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -326,6 +462,56 @@ header nav ul li a {
   #features .container .right p {
     font-size: 1.9rem;
   }
+
+  /* Feature-list section */
+  #feature-list {
+    width: 100%;
+    height: fit-content;
+    padding: 5rem 1rem;
+  }
+
+  #feature-list .container {
+    flex-direction: column;
+    gap: 8rem;
+    /* background-color: yellow; */
+  }
+
+  #feature-list .container .left {
+    width: 100%;
+  }
+
+  #feature-list .container .left .feature-items {
+    margin-top: 7rem;
+  }
+  #feature-list .container .left .title-box p {
+    font-size: 2.1rem;
+    margin-top: 3.5rem;
+  }
+
+  #feature-list .container .left .feature-items .item .item-content h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  #feature-list .container .left .feature-items .item .item-content p {
+    font-size: 2.1rem;
+  }
+
+  #feature-list .container .right {
+    width: 100%;
+    height: 110vh;
+  }
+
+  #feature-list .container .right .image-box {
+    width: 100%;
+    height: 96.2%;
+  }
+
+  #feature-list .container .right .btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -388,6 +574,56 @@ header nav ul li a {
   #features .container .right p {
     font-size: 1.9rem;
   }
+
+  /* Feature-list section */
+  #feature-list {
+    width: 100%;
+    height: fit-content;
+    padding: 5rem 1rem;
+  }
+
+  #feature-list .container {
+    flex-direction: column;
+    gap: 8rem;
+    /* background-color: yellow; */
+  }
+
+  #feature-list .container .left {
+    width: 100%;
+  }
+
+  #feature-list .container .left .feature-items {
+    margin-top: 7rem;
+  }
+  #feature-list .container .left .title-box p {
+    font-size: 2.1rem;
+    margin-top: 3.5rem;
+  }
+
+  #feature-list .container .left .feature-items .item .item-content h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  #feature-list .container .left .feature-items .item .item-content p {
+    font-size: 2.1rem;
+  }
+
+  #feature-list .container .right {
+    width: 100%;
+    height: 180vh;
+  }
+
+  #feature-list .container .right .image-box {
+    width: 100%;
+    height: 96.2%;
+  }
+
+  #feature-list .container .right .btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media screen and (min-width: 793px) and (max-width: 1440px) {
@@ -429,5 +665,55 @@ header nav ul li a {
 
   #features .container .right p {
     font-size: 1.9rem;
+  }
+
+  /* Feature-list section */
+  #feature-list {
+    width: 100%;
+    height: fit-content;
+    padding: 5rem 1rem;
+  }
+
+  #feature-list .container {
+    flex-direction: column;
+    gap: 8rem;
+    /* background-color: yellow; */
+  }
+
+  #feature-list .container .left {
+    width: 100%;
+  }
+
+  #feature-list .container .left .feature-items {
+    margin-top: 7rem;
+  }
+  #feature-list .container .left .title-box p {
+    font-size: 2.1rem;
+    margin-top: 3.5rem;
+  }
+
+  #feature-list .container .left .feature-items .item .item-content h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  #feature-list .container .left .feature-items .item .item-content p {
+    font-size: 2.1rem;
+  }
+
+  #feature-list .container .right {
+    width: 100%;
+    height: 180vh;
+  }
+
+  #feature-list .container .right .image-box {
+    width: 100%;
+    height: 96.2%;
+  }
+
+  #feature-list .container .right .btn {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
