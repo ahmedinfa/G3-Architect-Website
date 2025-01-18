@@ -307,6 +307,49 @@ header nav ul li a {
   font-weight: 400;
 }
 
+/* Facts section */
+#facts {
+  width: 100%;
+  height: fit-content;
+  padding: 5rem 0 11rem 0;
+}
+
+#facts .container .title-box .headings h1 {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+#facts .container .title-box p {
+  font-size: 1.8rem;
+}
+
+#facts .container .fact-container {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+#facts .container .fact-container .fact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid #ff900e;
+  border-radius: 1rem;
+  padding: 6rem 0;
+}
+
+#facts .container .fact-container .fact-box h2 {
+  font-size: 3.5rem;
+}
+
+#facts .container .fact-container .fact-box h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
 /* ##################### MEDIA QUERIES ################## */
 @media screen and (max-width: 576px) {
   html {
@@ -390,6 +433,20 @@ header nav ul li a {
   #feature-list .container .right .btn {
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  /* Facts section */
+  #facts {
+    padding: 5rem 1rem 11rem 1rem;
+  }
+
+  #facts .container .title-box p {
+    font-size: 1.8rem;
+  }
+
+  #facts .container .fact-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
   }
 }
 
@@ -512,6 +569,20 @@ header nav ul li a {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  /* Facts section */
+  #facts {
+    padding: 5rem 1rem 11rem 1rem;
+  }
+
+  #facts .container .title-box p {
+    font-size: 1.8rem;
+  }
+
+  #facts .container .fact-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -624,9 +695,23 @@ header nav ul li a {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  /* Facts section */
+  #facts {
+    padding: 5rem 1rem 11rem 1rem;
+  }
+
+  #facts .container .title-box p {
+    font-size: 1.8rem;
+  }
+
+  #facts .container .fact-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
 }
 
-@media screen and (min-width: 793px) and (max-width: 1440px) {
+@media screen and (min-width: 993px) and (max-width: 1440px) {
   .container {
     width: 100%;
   }
@@ -704,7 +789,7 @@ header nav ul li a {
 
   #feature-list .container .right {
     width: 100%;
-    height: 180vh;
+    height: 98vh;
   }
 
   #feature-list .container .right .image-box {
@@ -715,5 +800,19 @@ header nav ul li a {
   #feature-list .container .right .btn {
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  /* Facts section */
+  #facts {
+    padding: 5rem 1rem 11rem 1rem;
+  }
+
+  #facts .container .title-box p {
+    font-size: 1.8rem;
+  }
+
+  #facts .container .fact-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
   }
 }
